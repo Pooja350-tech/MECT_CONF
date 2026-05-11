@@ -37,6 +37,49 @@
   height: 180px;           /* control logo size */
   object-fit: contain;
 }
+	  /* NAVBAR ALIGNMENT FIX */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 12px 20px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  background: #fff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.nav-links a,
+.dropdown-toggle {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.15rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Register button */
+.register-btn {
+  background: yellow;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* Dropdown alignment */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
 
   </style>
@@ -75,9 +118,9 @@
     </div>
   </div>
 
-  <a href="programme.html">Programme<br> Schedule</a>
+  <a href="programme.html">Programme Schedule</a>
   <a href="#callforpapers">Call for Papers</a>
-  <a href="#dates">Important<br> Dates</a>
+  <a href="#dates">Important Dates</a>
   <a href="correctaccommadation.html">Accommodation</a>
   <a href="maduraipage.html">Explore Madurai</a>
   <a href="#footer-section">Contact Us</a>
