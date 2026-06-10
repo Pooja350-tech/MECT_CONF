@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,49 +37,6 @@
 .left-logo img {
   height: 180px;           /* control logo size */
   object-fit: contain;
-}
-	  /* NAVBAR ALIGNMENT FIX */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 12px 20px;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  background: #fff;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 22px;
-  flex-wrap: wrap;
-}
-
-.nav-links a,
-.dropdown-toggle {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.15rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-/* Register button */
-.register-btn {
-  background: yellow;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-}
-
-/* Dropdown alignment */
-.dropdown {
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 
 
@@ -118,9 +76,9 @@
     </div>
   </div>
 
-  <a href="programme.html">Programme Schedule</a>
+  <a href="programme.html">Programme<br> Schedule</a>
   <a href="#callforpapers">Call for Papers</a>
-  <a href="#dates">Important Dates</a>
+  <a href="#dates">Important<br> Dates</a>
   <a href="correctaccommadation.html">Accommodation</a>
   <a href="maduraipage.html">Explore Madurai</a>
   <a href="#footer-section">Contact Us</a>
@@ -183,12 +141,10 @@
     <span class="info-blink">Early Bird Registration closes on April 10 2027.</span>
     <span class="info-blink">Submit Your Paper and join researchers from academia & industry worldwide</span>
     <span class="info-blink">Conference dates: May 07 & 08, 2027.</span>
-    <span class="info-blink">All accepted papers will be published in Procedia Engineering,published by Elsevier after peer review.</span>
     <!-- Duplicate content for seamless loop -->
     <span class="info-blink">Early Bird Registration closes on April 10, 2027</span>
     <span class="info-blink">Submit Your Paper and join researchers from academia & industry worldwide</span>
     <span class="info-blink">Conference dates: May 07 & 08, 2027.</span>
-    <span class="info-blink">All accepted papers will be published in Procedia Engineering,published by Elsevier after peer review.</span>
   </div>
 </div>
  
@@ -655,7 +611,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-    
+   
 
 <!-- ===== Call for Papers: Policy Sections ===== -->
 <div class="cfp-policies">
@@ -664,7 +620,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <section class="section cfp-policy-section">
       <h2>Call for Papers</h2>
     </section>
-	  <div class="theme">
+	  <div class="theme" id="callforpapers">
   <div class="theme-container">
     <section class="section" id="dates">
     <h2>Conference Tracks</h2></section>
@@ -747,7 +703,13 @@ document.addEventListener('DOMContentLoaded', function () {
         </ul>
       </div>
     </div>
-	  <section class="section" id="dates">
+	  
+
+   
+
+  </div>
+</div>
+	   <section class="section" id="dates">
     <h2>Important Dates</h2>
       <!DOCTYPE html>
 <html lang="en">
@@ -949,6 +911,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	 </section>
 
+
     <div class="policy-card">
       <h3 class="policy-heading">Editorial Policy</h3>
       <div class="policy-body">
@@ -1019,10 +982,6 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 </div>
 <!-- ===== End Call for Papers Policy Sections ===== -->
-   
-
-  </div>
-</div>
 
 <section class="volunteer-section section-padding" id="committee-section">
   <div class="container">
@@ -1291,20 +1250,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </div>
 
-<div class="g-container" id="callforpapers">
-    <!-- Section 1: Author Guidelines -->
-    <div class="section-box">
-      <h1 style="text-align: center; color:#800000;"><b>Publication Oppurtunities and Paper Policy</b></h1>
-      <ul class="guidelines">
-        <h5>Authors of selected papers from the conference proceeding will be invited to submit the extended version of the papers for consideration and publication in the following journals</h5>
-        <li>International journal of Assembly Automation, Emerald</li>
-        <li>International Journal of Industrial Robot, Emerald</li>
-        <li>International Journal of Robotics and Automation, ACTA Press </li>
-        <li>International Journal of Advanced Mechatronics System, Inderscience </li>
-        </ul>
-        <p><b>NOTE:</b> All full paper submissions will be peer reviewed and evaluated based on originality, technical and/or research content/depth, correctness, relevance to conference, contributions and readability. All accepted papers which are personally presented at the conference will be published in Procedia Engineering, published by Elsevier (pending Approval)</p>
-        
-    </div>
+<div class="g-container">
 
 <div class="registration-wrapper">
     <h2 class="registration-title">Registration Details</h2>
@@ -1574,6 +1520,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var cfpLink = document.querySelector('a[href="#callforpapers"]');
+    if (cfpLink) {
+      cfpLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.getElementById('callforpapers');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+  });
+</script>
 
 </body>
 </html>
