@@ -3256,5 +3256,34 @@ Display:flex;
 .policy-body li {
   margin-bottom: 6px;
 }
+/* ===== FIX: Remove excessive gap below Conference Tracks heading ===== */
+.theme {
+  min-height: unset !important;
+  padding-top: 20px !important;
+}
+
+.cfp-policies {
+  padding-top: 0 !important;
+}
+
+.cfp-policies .container {
+  padding-top: 0 !important;
+}
+/* ===== FIX: Important Dates heading — maroon, gold underline, correct size ===== */
+.section#dates h2 {
+  font-family: 'Georgia', serif !important;
+  font-size: 2.4rem !important;
+  font-weight: 700 !important;
+  color: #800000 !important;
+  text-align: center;
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.section#dates h2::after {
+  background-color: #DAA520 !important;
+  width: 100px !important;
+  height: 5px !important;
+}
 
 
