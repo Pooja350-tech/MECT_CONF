@@ -3127,5 +3127,12 @@ Display:flex;
     font-size: 2rem;
     font-weight: bold;
 }
+	.conference-tracks-heading {
+    text-align: center;
+}
+
+.conference-tracks-heading h2 {
+    text-align: center;
+}
 }
 
