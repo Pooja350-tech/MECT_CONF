@@ -3121,5 +3121,11 @@ Display:flex;
   .speaker-img {
     height: 200px;
   }
+	.policy-heading {
+    font-family: 'Lora', serif;
+    color: var(--primary-maroon);
+    font-size: 2rem;
+    font-weight: bold;
+}
 }
 
