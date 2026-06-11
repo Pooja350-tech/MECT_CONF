@@ -3160,4 +3160,101 @@ Display:flex;
     margin: 0;
 }
 }
+	/* ===== FIX 1 & 2: Conference Tracks heading — centered, maroon, correct size ===== */
+.conference-tracks-title {
+  text-align: center;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+.conference-tracks-title h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #800000 !important;
+  text-align: center;
+  position: relative;
+  padding-bottom: 14px;
+  margin: 0 auto 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.conference-tracks-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: #DAA520;
+  border-radius: 3px;
+}
+
+/* ===== FIX 2: Align accordion items to center with proper gap ===== */
+.cfp-policies .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.accordion-item {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+}
+
+/* ===== FIX 3: Editorial Policy & other policy cards — boxed, centered, maroon headings ===== */
+.policy-card {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1.5px solid #e8d0d0;
+  border-top: 4px solid #800000;
+  padding: 24px 30px;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.07);
+  text-align: left;
+}
+
+.policy-heading {
+  font-family: 'Georgia', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #800000 !important;
+  text-align: center;
+  margin-bottom: 14px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.policy-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #DAA520;
+  border-radius: 2px;
+}
+
+.policy-body p,
+.policy-body ul {
+  color: #222222;
+  font-size: 0.97rem;
+  line-height: 1.75;
+}
+
+.policy-body ul {
+  padding-left: 22px;
+}
+
+.policy-body li {
+  margin-bottom: 6px;
+}
+
 
